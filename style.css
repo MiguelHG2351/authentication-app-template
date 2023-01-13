@@ -1,5 +1,6 @@
 :root {
     --dark-blue: #252329;
+    --dark-white: #E0E0E0;
     --grayish-blue: #828282;
     --grayish-white: #BDBDBD;
     --light-blue: #2F80ED;
@@ -17,6 +18,7 @@ body {
     font-family: "Noto Sans", sans-serif;
     /* background-color: var(--dark-blue); */
     margin: 0;
+    height: 100vh;
 }
 
 a {
@@ -40,6 +42,7 @@ a {
 }
 
 .description {
+    color: var(--dark-white);
     font-size: 1rem;
 }
 
@@ -115,4 +118,30 @@ input {
 
 .footer-title {
     margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-auth {
+        height: max-content;
+    }
+    
+    .card-auth {
+        border: 1px solid var(--grayish-blue);
+        padding: 1rem 2rem;
+        border-radius: 1.5rem;
+    }
+
+    .title {
+        margin: 1.875rem 0;
+    }
+
+    .footer {
+        margin-top: 1rem;
+    }
 }
