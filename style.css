@@ -18,7 +18,7 @@ body {
     font-family: "Noto Sans", sans-serif;
     background-color: var(--dark-blue);
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 a {

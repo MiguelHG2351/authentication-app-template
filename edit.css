@@ -19,7 +19,7 @@ html {
 body {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--dark-blue);
 }
 
@@ -135,6 +135,7 @@ body {
   max-width: 850px;
   margin: 0 auto;
   padding: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 .change-photo-left {
@@ -207,6 +208,16 @@ body {
   border: 1px solid var(--grayish-white);
 }
 
+.send-btn {
+  border: none;
+  background-color: var(--soft-blue);
+  color: #fff;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 996px) {
   .back-to-profile {
     margin-left: -0.5rem;
@@ -229,5 +240,9 @@ body {
 
   .change-information {
     margin-top: 3.5rem;
+  }
+
+  .send-btn {
+    width: max-content;
   }
 }
