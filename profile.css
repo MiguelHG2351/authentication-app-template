@@ -50,6 +50,10 @@ body {
   border-radius: .5rem;
 }
 
+.picture-title {
+  user-select: none;
+}
+
 .header-profile-menu {
   display: none;
   width: max-content;
@@ -97,6 +101,14 @@ body {
 
 .profile-menu-link:last-child {
   color: var(--soft-red);
+}
+
+.profile-menu-link:last-child:hover svg path {
+  fill: var(--soft-red);
+}
+
+.profile-menu-link:last-child:hover { 
+  background-color: #eb57578f;
 }
 
 /* #endregion */
@@ -215,10 +227,10 @@ body {
     height: auto;
   }
 
-  .header-profile-menu {
+  /* .header-profile-menu {
     display: block;
     position: absolute;
-  }
+  } */
 
   .profile-title {
     font-size: 2.25rem;
